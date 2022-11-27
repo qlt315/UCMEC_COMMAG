@@ -20,5 +20,7 @@ decision to minimize the total energy consumption under
 delay constraints. Simulation results show that our proposed ptimization scheme can bring users lower energy consumption, delay, and higher successful offloading probability than
 traditional MEC.
 
-This paper is available on https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9952196
+This paper is available on https://ieeexplore.ieee.org/document/9952196
+
+
 

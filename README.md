@@ -23,4 +23,15 @@ traditional MEC.
 This paper is available on https://ieeexplore.ieee.org/document/9952196
 
 
+**Running Environments:**
+
+
+python==3.7.9   numpy==1.19.4
+
+
+pytorch==1.12.0   tensorboard==0.6.0
+
+
+gym==0.21.0
+
 

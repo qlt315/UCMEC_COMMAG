@@ -17,7 +17,7 @@ transmission and edge computing services. To further exploit
 the benefits of UCMEC, we jointly optimize the task partition,
 transmit power control, and computing resource allocation
 decision to minimize the total energy consumption under
-delay constraints. Simulation results show that our proposed ptimization scheme can bring users lower energy consumption, delay, and higher successful offloading probability than
+delay constraints. Simulation results show that our proposed optimization scheme can bring users lower energy consumption, delay, and higher successful offloading probability than
 traditional MEC.
 
 This paper is available on https://ieeexplore.ieee.org/document/9952196

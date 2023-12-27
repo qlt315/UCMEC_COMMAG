@@ -7,7 +7,7 @@ This version of the code has made changes to the original paper code, which are 
 (1) The optimization objective has been changed from the energy consumption to the average total delay
 
 
-(2) The decision to allocate computing resources is made by the cvxpy library, rather than by the PPO-based agent
+(2) The computing resource allocation stategy is obtained by solving the convex problem via the cvxpy library, rather than explored by the PPO-based agent
 
 
 (3) Fixed some bugs in the previous code and optimized the code structure

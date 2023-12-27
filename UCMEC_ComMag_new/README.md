@@ -4,10 +4,10 @@ Revsied simulation code based on our paper in IEEE Communications Magazine -- Wh
 This version of the code has made changes to the original paper code, which are mainly summarized as follows:
 
 
-(1) The optimization objective has been changed from energy consumption to latency
+(1) The optimization objective has been changed from the energy consumption to the average total delay
 
 
-(2) The decision to allocate computing resources is made by the cvxpy library, rather than by the ppo based agent
+(2) The decision to allocate computing resources is made by the cvxpy library, rather than by the PPO-based agent
 
 
 (3) Fixed some bugs in the previous code and optimized the code structure

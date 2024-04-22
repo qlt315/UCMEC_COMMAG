@@ -11,7 +11,7 @@ The changes are mainly summarized as follows:
 
 (3) Fixed some bugs in the previous code and optimized the code structure
 
-This paper is available on https://ieeexplore.ieee.org/document/9952196
+The original paper is available on https://ieeexplore.ieee.org/document/9952196
 
 
 **Running Environments:**

@@ -172,14 +172,14 @@ class UCMEC(gym.Env):
             total_energy[0, i] = local_com_energy[0, i] + edge_com_energy[0, i]
 
         # compare delay with task max delay  delay constraint
-        penalty_sum = 0  # total
+        delay_penalty_sum = 0  # total
         penalty = 5  # per user
         success_com_count = np.zeros([1, M])
         success_tran_count = np.zeros([1, M])
         success_count = np.zeros([1, M])
         for i in range(M):
             if total_delay[0, i] >= Task_max_delay[0, i]:
-                penalty_sum = penalty_sum + penalty
+                penalty_sum = delay_penalty_sum + penalty
             else:
                 success_com_count[0, i] = 1
 
@@ -195,9 +195,10 @@ class UCMEC(gym.Env):
         success_pro = np.sum(success_count) / M
 
         # edge computing resource constraint
-        com_resource_penalty = abs(C_edge - np.sum(c_current)) * 500000
+        com_resource_penalty = abs(C_edge - np.sum(c_current))
 
-        reward = -(np.sum(total_energy))
+        reward = 4000 -(np.sum(total_energy)) -  com_resource_penalty - delay_penalty_sum
+        print(reward)
 
         if self.step_num > 36000:
             done = True
@@ -318,7 +319,7 @@ def main(args, env_name, number, seed):
             end = time.time()
             runTime = end - start
             runtime_list.append(runTime)
-            print(runTime)
+            # print(runTime)
             episode_steps += 1
             a, a_logprob = agent.choose_action(s)  # Action and the corresponding log probability
             if args.policy_dist == "Beta":

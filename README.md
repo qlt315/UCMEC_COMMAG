@@ -1,5 +1,5 @@
 # When the User-Centric Network Meets Mobile Edge Computing: Challenges and Optimization
-Simulation code and mathematic details of our paper in IEEE Communications Magazine ``When the User-Centric Network Meets Mobile Edge Computing: Challenges and Optimization''.
+Evaluation code and mathematic details of our paper in IEEE Communications Magazine ``When the User-Centric Network Meets Mobile Edge Computing: Challenges and Optimization''.
 
 **Abstract:** As an emergent computing paradigm, mobile edge computing (MEC) can provide users with strong computing, storage,
 and communication services by moving the server to the user
